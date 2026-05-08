@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia - Laufey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F8F5F2', // branco creme do fundo
+                        secondary: '#E8DED2', // tom bege claro
+                        accent: '#D4AF37', // dourado
+                        dark: '#2B2420', // tom escuro suave
+                        soft: '#F0E6D2', // tom claro da tecido
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gold {
+                color: #D4AF37;
+            }
+            .bg-gold {
+                background-color: #D4AF37;
+            }
+            .text-shadow-sm {
+                text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            }
+            .border-soft {
+                border-color: #E8DED2;
+            }
+            .text-alternate span {
+                color: #F8F5F2;
+            }
+            .text-alternate .keyword {
+                color: #D4AF37;
+                font-weight: 600;
+            }
+            .bg-canvas {
+                background-color: #F8F5F2;
+                background-image: linear-gradient(135deg, rgba(232, 222, 210, 0.2) 0%, rgba(248, 245, 242, 0.4) 100%);
+            }
+            .shadow-light {
+                box-shadow: 0 8px 32px rgba(43, 36, 32, 0.06);
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-canvas min-h-screen font-sans text-dark">
+    <!-- Cabeçalho -->
+    <header class="sticky top-0 z-50 bg-primary/80 backdrop-blur-md border-b border-soft shadow-sm">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-[clamp(1.5rem,3vw,2rem)] font-serif font-bold text-gold mb-4 md:mb-0">LAUFEY</h1>
+            <nav>
+                <ul class="flex gap-6 md:gap-8">
+                    <li><a href="#" class="text-dark hover:text-gold transition-colors duration-300 font-medium">Home</a></li>
+                    <li><a href="#" class="text-dark hover:text-gold transition-colors duration-300 font-medium">About</a></li>
+                    <li><a href="#" class="text-dark hover:text-gold transition-colors duration-300 font-medium">Project Laufey</a></li>
+                    <li><a href="#" class="text-dark hover:text-gold transition-colors duration-300 font-medium">Álbuns</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="container mx-auto px-4 md:px-8 py-12">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+            <!-- Imagem à Esquerda -->
+            <div class="w-full lg:w-2/5 relative">
+                <div class="rounded-2xl overflow-hidden shadow-light border-[8px] border-primary">
+                    <img 
+                        src="https://images.unsplash.com/photo-1715246694418-8d4e5d76c72b?q=80&w=1000&auto=format&fit=crop" 
+                        alt="Laufey" 
+                        class="w-full h-auto object-cover"
+                    >
+                </div>
+                <!-- Detalhe decorativo - sombra/raio de luz como na imagem -->
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-gold/10 rounded-full blur-xl"></div>
+                <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+            </div>
+
+            <!-- Texto à Direita -->
+            <div class="w-full lg:w-3/5 space-y-8 text-lg leading-relaxed text-alternate">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-serif font-bold text-gold mb-6 text-shadow-sm">Biografia</h2>
+
+                <p>
+                    <span class="keyword">Laufey Lín Jónsdóttir</span>, conhecida artisticamente apenas como <span class="keyword">Laufey</span>, nasceu em <span class="keyword">Reykjavík, Islândia</span>, em 1999. É uma cantora, compositora e multi-instrumentista que conquistou o mundo com uma mistura única de <span class="keyword">jazz</span>, <span class="keyword">música clássica</span> e <span class="keyword">pop moderno</span>.
+                </p>
+
+                <p>
+                    Criada em uma família de músicos, começou a estudar violino e piano ainda criança, desenvolvendo uma base técnica sólida que se reflete em todas as suas composições. Aos 15 anos, participou da versão islandesa do programa <span class="keyword">Got Talent</span>, onde chegou à final e mostrou seu talento para um público maior. Mais tarde, se mudou para os Estados Unidos para estudar na <span class="keyword">Berklee College of Music</span>, uma das instituições mais renomadas do mundo para a música.
+                </p>
+
+                <p>
+                    Sua carreira decolou em 2020, durante a pandemia, quando passou a compartilhar suas músicas e versões em redes sociais. O single <span class="keyword">Street by Street</span> se tornou viral, alcançando o primeiro lugar nas paradas de música alternativa da Islândia e chamando atenção internacional. Desde então, ela lançou projetos que encantam pela simplicidade, elegância e letras que falam sobre amor, crescimento e sentimentos humanos.
+                </p>
+
+                <p>
+                    Em 2022, lançou seu álbum de estreia <span class="keyword">Everything I Know About Love</span>, que foi aclamado pela crítica e pelo público, levando-a a se apresentar em palcos de todo o mundo. Seu segundo álbum, <span class="keyword">Bewitched</span>, lançado em 2023, consolidou seu sucesso e rendeu sua primeira indicação ao <span class="keyword">Grammy Award</span>, na categoria Melhor Álbum de Jazz Vocal.
+                </p>
+
+                <p>
+                    O estilo de Laufey é marcado por melodias suaves, arranjos refinados e uma voz que carrega tanto a tradição do jazz quanto a sensibilidade da música pop. Ela se apresenta frequentemente com orquestras e grupos de jazz, provando que a música de qualidade não tem fronteiras e consegue unir gerações. Para ela, a música é uma forma de contar histórias — histórias que são pessoais, mas que todos podem reconhecer como suas.
+                </p>
+
+                <p>
+                    Com milhões de ouvintes no mundo todo, Laufey continua a escrever, compor e se apresentar, provando que é uma das artistas mais brilhantes e promissoras da sua geração, levando a essência da música clássica e do jazz para uma nova audiência.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary/60 border-t border-soft py-8 mt-20">
+        <div class="container mx-auto px-4 md:px-8 text-center text-dark/70 text-sm">
+            <p>© 2026 Laufey | Site desenvolvido com inspiração na luz, suavidade e elegância</p>
+        </div>
+    </footer>
+</body>
+</html>
